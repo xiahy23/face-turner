@@ -4,7 +4,7 @@
 
 ### python
 该任务需要使用python实现，这里推荐使用python3.8.19。
-操作系统需要Linux系列，Windows环境无法实现
+操作系统需要Linux系统，Windows环境无法实现
 
 ### 依赖库
 所需要的依赖库列在了requirement.txt当中，推荐使用Anaconda的虚拟环境安装。
