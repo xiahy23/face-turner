@@ -2,18 +2,19 @@
 
 ## 环境配置
 
-### python
+### 系统与python
 该任务需要使用python实现，这里推荐使用python3.8.19。
 操作系统需要Linux系统，Windows环境无法实现
 
 ### 依赖库
 所需要的依赖库列在了requirement.txt当中，推荐使用Anaconda的虚拟环境安装。
-在项目目录下打开命令行或者powershell，运行下面的命令即可安装依赖库。
+在项目目录下打开命令行或者powershell，运行下面的命令即可安装大部分依赖库，不排除部分库因为环境问题安装出现困难的情况。
 ```
 pip install -r requirement.txt
 ```
-本次作业依赖pytorch，最好使用cuda，因为真能明显加速！安装pytorch时务必注意带上cuda的。
-注意，由于依赖项目的问题，使用的库并非最新版，需要安装11.7版的CUDA。
+- 如果安装pytorch3d时遇到问题，可以参考[官方网站](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md)。
+- 本次作业依赖pytorch，最好使用cuda，因为真能明显加速！安装pytorch时务必注意带上cuda的。
+- 注意，由于依赖项目的问题，使用的库并非最新版，需要安装11.7版的CUDA。
 
 ## 实现任务
 
@@ -25,6 +26,7 @@ pip install -r requirement.txt
 
 构建人脸3D模型需要一个基准模型，本解决方案使用[Albedo model](https://github.com/TimoBolkart/BFM_to_FLAME)中的FLAME_albedo_from_BFM.npz模型，放置在./DECA/data目录下。如有需要，可以进行替换。
 
+由于Github上传文件大小有限制，本项目删除了./DECA/data目录下的模型文件，可在[清华云盘](https://cloud.tsinghua.edu.cn/d/9157410cf27546ecb4f6/)查看下载。
 
 ### 操作流程
 
